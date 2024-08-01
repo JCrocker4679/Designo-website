@@ -13,4 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		hamburgerIcon.classList.toggle('hide');
 		closeIcon.classList.toggle('show');
 	});
+
+	mobileModal.addEventListener('click', function () {
+		mobileModal.classList.toggle('active');
+		mobileMenu.classList.toggle('active');
+		hamburgerIcon.classList.toggle('hide');
+		closeIcon.classList.toggle('show');
+	});
 });
