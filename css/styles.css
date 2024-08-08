@@ -662,6 +662,12 @@ PAGES-SERVICES
 
 ------------------ */
 
+.pages-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
 /*----------------
 
 MEDIA QUERIES
@@ -757,7 +763,8 @@ MEDIA QUERIES
 		padding: 0 2rem;
 	}
 
-	.grid {
+	.grid,
+	.pages-grid {
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
 	}
