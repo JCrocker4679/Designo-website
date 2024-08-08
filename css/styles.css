@@ -492,6 +492,9 @@ CTA SECTION
 }
 
 .cta .background {
+	background-image: url(/assets/shared/desktop/bg-pattern-call-to-action.svg);
+	background-repeat: no-repeat;
+	background-position: right;
 	background-color: var(--primary-color);
 	color: white;
 	position: relative;
@@ -501,30 +504,6 @@ CTA SECTION
 	align-items: center;
 	justify-content: center;
 	border-radius: 15px;
-}
-.circles {
-	z-index: 1;
-}
-
-.cta .background .three-circles {
-	position: absolute;
-	right: 0;
-	top: -130px;
-	transform: rotate(90deg);
-	opacity: 0.6;
-}
-
-.cta .background .two-circles-1 {
-	position: absolute;
-	right: -290px;
-	top: 145px;
-	opacity: 0.8;
-}
-.cta .background .two-circles-2 {
-	position: absolute;
-	right: 18.25rem;
-	top: 10rem;
-	opacity: 0.4;
 }
 
 .cta .content {
@@ -763,24 +742,6 @@ MEDIA QUERIES
 		margin-bottom: 1.5rem;
 	}
 
-	.cta .background .three-circles {
-		position: absolute;
-		right: -270px;
-		top: -20%;
-		bottom: -10%;
-		transform: rotate(90deg) scale(120%);
-		opacity: 0.3;
-		flex-shrink: 0;
-		min-width: 700px;
-	}
-
-	.cta .background .two-circles-1 {
-		display: none;
-	}
-	.cta .background .two-circles-2 {
-		display: none;
-	}
-
 	.cta .content .btn-light {
 		margin-left: 0;
 	}
@@ -926,18 +887,5 @@ MEDIA QUERIES
 	.cta .content p {
 		font-size: 15px;
 		max-width: 300px;
-	}
-
-	.cta .background .three-circles {
-		right: -350px;
-		top: -150px;
-		transform: scale(100%);
-	}
-
-	.cta .background .two-circles-1 {
-		display: none;
-	}
-	.cta .background .two-circles-2 {
-		display: none;
 	}
 }
