@@ -145,7 +145,6 @@ UTILITIES
 	color: var(--black);
 	cursor: pointer;
 	height: fit-content;
-	min-width: 170px;
 }
 
 .btn-light:hover {
@@ -527,6 +526,7 @@ CTA SECTION
 
 .cta .content .btn-light {
 	margin-left: 1rem;
+	min-width: 164px;
 }
 
 /* -------------
@@ -604,6 +604,63 @@ FOOTER SECTION
 	width: 24px;
 	height: 24px;
 }
+
+/*----------------
+
+PAGES HEADER
+
+------------------ */
+
+.header {
+	margin: 1rem 0;
+}
+
+.header .container {
+	position: relative;
+}
+
+.header .bg-leaf {
+	position: absolute;
+	height: 594px;
+	width: 1006px;
+	z-index: -10;
+	bottom: -25rem;
+	left: -8rem;
+}
+
+.header .header-background {
+	background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color: var(--primary-color);
+	border-radius: 15px;
+}
+
+.header .header-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4rem 0;
+	text-align: center;
+}
+
+.header-content {
+	display: flex;
+	gap: 2rem;
+	padding: 0 2rem;
+	flex-direction: column;
+	color: var(--white);
+}
+
+.header .header-content p {
+	max-width: 40ch;
+}
+
+/*----------------
+
+PAGES-SERVICES
+
+------------------ */
 
 /*----------------
 
@@ -797,95 +854,119 @@ MEDIA QUERIES
 		gap: 1.5rem;
 		align-items: flex-end;
 	}
-}
 
-@media (max-width: 440px) {
-	h1 {
-		font-size: 32px;
-		line-height: 36px;
+	.header .header-background {
+		background-image: url(../assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg);
 	}
 
-	h2 {
-		font-size: 28px;
-		line-height: 36px;
-		letter-spacing: 1.4px;
-	}
+	@media (max-width: 440px) {
+		h1 {
+			font-size: 32px;
+			line-height: 36px;
+		}
 
-	p {
-		font-weight: 400px;
-		font-size: 15px;
-		line-height: 25px;
-	}
+		h2 {
+			font-size: 28px;
+			line-height: 36px;
+			letter-spacing: 1.4px;
+		}
 
-	.navbar {
-		padding: 2.5rem 0rem;
-	}
+		p {
+			font-weight: 400px;
+			font-size: 15px;
+			line-height: 25px;
+		}
 
-	.navbar .navbar-flex {
-		padding: 0 1rem;
-	}
+		.navbar {
+			padding: 2.5rem 0rem;
+		}
 
-	.hero .container {
-		padding: 0;
-	}
+		.navbar .navbar-flex {
+			padding: 0 1rem;
+		}
 
-	.hero {
-		margin: 0;
-	}
+		.hero .container,
+		.header .container {
+			padding: 0;
+		}
 
-	.hero .hero-content h1 {
-		max-width: 60ch;
-	}
+		.hero,
+		.header {
+			margin: 0;
+		}
 
-	.hero .hero-background {
-		border-radius: 0;
-	}
+		.hero .hero-content h1 {
+			max-width: 60ch;
+		}
 
-	.hero .hero-content {
-		padding: 0 1rem;
-		gap: 1rem;
-		margin: 5rem 0 0 0;
-	}
+		.hero .hero-background,
+		.header .header-background {
+			border-radius: 0;
+		}
 
-	.hero .hero-image {
-		transform: scale(175%);
-		margin-top: 8rem;
-	}
+		.hero .hero-content {
+			padding: 0 1rem;
+			gap: 1rem;
+			margin: 5rem 0 0 0;
+		}
 
-	.services {
-		margin-top: 6rem;
-	}
+		.hero .hero-image {
+			transform: scale(175%);
+			margin-top: 8rem;
+		}
 
-	.attributes .flex-container {
-		gap: 6rem;
-	}
+		.services {
+			margin-top: 6rem;
+		}
 
-	.attributes .item-container {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr;
-		justify-items: center;
-	}
+		.attributes .flex-container {
+			gap: 6rem;
+		}
 
-	.attributes .item-container .content {
-		grid-column: 1;
-		grid-row: 2;
-		text-align: center;
-	}
+		.attributes .item-container {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr;
+			justify-items: center;
+		}
 
-	.cta .background {
-		padding: 3rem 0;
-	}
+		.attributes .item-container .content {
+			grid-column: 1;
+			grid-row: 2;
+			text-align: center;
+		}
 
-	.cta .content {
-		width: 100%;
-	}
-	.cta .content h2 {
-		font-size: 32px;
-	}
+		.cta .background {
+			padding: 3rem 0;
+		}
 
-	.cta .content p {
-		font-size: 15px;
-		max-width: 300px;
+		.cta .content {
+			width: 100%;
+		}
+		.cta .content h2 {
+			font-size: 32px;
+		}
+
+		.cta .content p {
+			font-size: 15px;
+			max-width: 300px;
+		}
+
+		.header {
+			margin: 1rem 0;
+		}
+
+		.header .header-content {
+			padding: 0 1rem;
+		}
+
+		.header .header-flex {
+			padding: 6rem 0;
+		}
+
+		.header .header-background {
+			background-image: url(../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg);
+			background-position: -200px 0px;
+		}
 	}
 }

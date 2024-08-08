@@ -1,60 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
-</head>
-<body>
-  Our Company
-  Locations
-  Contact
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32x32.png"
+		/>
 
-  Web design
-  We build websites that serve as powerful marketing tools and bring memorable brand experiences.
-  
-  Express
-  A multi-carrier shipping website for ecommerce businesses
+		<title>Frontend Mentor | Designo Agency Website Challenge</title>
+	</head>
+	<body>
+		<!DOCTYPE html>
+		<html lang="en">
+			<head>
+				<meta charset="UTF-8" />
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  Transfer
-  Site for low-cost money transfers and sending money within seconds
+				<link
+					rel="icon"
+					type="image/png"
+					sizes="32x32"
+					href="./assets/favicon-32x32.png"
+				/>
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+				<link
+					href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+					rel="stylesheet"
+				/>
+				<link rel="stylesheet" href="/css/styles.css" />
 
-  Photon
-  A state-of-the-art music player with high-resolution audio and DSP effects
+				<title>Welcome to Designo</title>
+			</head>
+			<body>
+				<!-- NAVIGATION -->
+				<nav class="navbar">
+					<div class="navbar-flex container">
+						<a href="/"
+							><img
+								src="/assets/shared/desktop/logo-dark.png"
+								class="logo"
+								alt="Designo Logo"
+						/></a>
+						<div class="main-menu-items">
+							<ul class="menu-items-list">
+								<li><a href="/about.html">Our Company</a></li>
+								<li><a href="/locations.html">Locations</a></li>
+								<li><a href="/contact.html">Contact</a></li>
+							</ul>
+						</div>
+						<!-- MOBILE MENU -->
+						<div class="mobile-menu">
+							<!-- HAMBURGER BUTTON -->
+							<div class="mobile-menu-toggle">
+								<img
+									src="/assets/shared/mobile/icon-hamburger.svg"
+									alt="menu button"
+									class="hamburger"
+								/>
+								<img
+									src="/assets/shared/mobile/icon-close.svg"
+									alt="close button"
+									class="close hide"
+								/>
+							</div>
+							<!-- OVERLAY BEHIND MOBILE MENU -->
+							<div class="mobile-menu-modal"></div>
+							<!-- MOBILE MENU ITEMS LIST -->
+							<div class="mobile-menu-items">
+								<ul class="mobile-menu-list">
+									<li><a href="/about.html">Our Company</a></li>
+									<li><a href="/locations.html">Locations</a></li>
+									<li><a href="/contact.html">Contact</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
 
-  Builder
-  Connects users with local contractors based on their location
+				<!-- PAGES HEADER -->
+				<section class="header">
+					<div class="container">
+						<div class="bg-leaf">
+							<img src="/assets/shared/desktop/bg-pattern-leaf.svg" alt="" />
+						</div>
+						<div class="header-background header-flex">
+							<div class="header-content">
+								<h1>Web Design</h1>
+								<p>
+									We build websites that serve as powerful marketing tools and
+									bring memorable brand experiences.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
 
-  Blogr
-  Blogr is a platform for creating an online blog or publication
+				<!-- SERVICES SECTION -->
 
-  Camp
-  Get expert training in coding, data, design, and digital marketing
+				<section class="services-pages">
+					<div class="container">
+						<div class="pages-grid">
+							<div class="grid-item item1">
+								<a href="/app-deisgn.html">
+									<picture>
+										<source
+											media="(max-width: 480px)"
+											srcset="/assets/home/mobile/image-app-design.jpg"
+										/>
+										<source
+											media="(max-width: 768px)"
+											srcset="/assets/home/tablet/image-app-design.jpg"
+										/>
 
-  App Design
-  View Projects
-  
-  Graphic Design
-  View Projects
-  
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can help 
-  your business grow.
-  Get in touch
-  
-  Our company
-  Locations
-  Contact
-  
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-  
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
-</body>
+										<img
+											class="bg-image"
+											src="/assets/home/desktop/image-app-design.jpg"
+											alt=""
+										/>
+									</picture>
+									<div class="grid-item-content">
+										<h2>App Design</h2>
+										<p>
+											view projects
+											<span>
+												<img
+													src="/assets/shared/desktop/icon-right-arrow.svg"
+													alt=""
+											/></span>
+										</p>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item item2">
+								<a href="/graphic-design">
+									<picture>
+										<source
+											media="(max-width: 480px)"
+											srcset="/assets/home/mobile/image-graphic-design.jpg"
+										/>
+										<source
+											media="(max-width: 768px)"
+											srcset="/assets/home/tablet/image-graphic-design.jpg"
+										/>
+
+										<img
+											class="bg-image"
+											src="/assets/home/desktop/image-graphic-design.jpg"
+											alt=""
+										/>
+									</picture>
+									<div class="grid-item-content">
+										<h2>Graphic Design</h2>
+										<p>
+											view projects
+											<span>
+												<img
+													src="/assets/shared/desktop/icon-right-arrow.svg"
+													alt=""
+											/></span>
+										</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- CTA -->
+
+				<section class="cta">
+					<div class="container">
+						<div class="background">
+							<div class="content">
+								<div class="text">
+									<h2>Let’s talk about your project</h2>
+									<p>
+										Ready to take it to the next level? Contact us today and
+										find out how our expertise can help your business grow.
+									</p>
+								</div>
+
+								<a href="#"><div class="btn-light">Get in Touch</div></a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- Footer -->
+
+				<footer class="footer">
+					<div class="container">
+						<nav class="footer-nav">
+							<img
+								class="logo"
+								src="/assets/shared/desktop/logo-light.png"
+								alt="logo"
+							/>
+							<div class="divider-1"></div>
+							<ul class="footer-nav-menu">
+								<a href="/about"
+									><li class="footer-nav-item">Our Company</li></a
+								>
+								<a href="/locations"
+									><li class="footer-nav-item">Locations</li></a
+								>
+								<a href="/contact"><li class="footer-nav-item">Contact</li></a>
+							</ul>
+						</nav>
+						<div class="divider-2"></div>
+						<div class="footer-info-container">
+							<div class="address">
+								<p>
+									<strong>Designo Central Office </strong> <br />3886 Wellington
+									Street<br />
+									Toronto, Ontario M9C 3J5
+								</p>
+							</div>
+							<div class="contact-numbers">
+								<p>
+									Contact Us (Central Office)<br />
+									<span>P : +1 253-863-8967 <br />M : contact@designo.co </span>
+								</p>
+							</div>
+							<div class="socials">
+								<a href="#"
+									><img src="/assets/shared/desktop/icon-facebook.svg" alt=""
+								/></a>
+								<a href="#"
+									><img src="/assets/shared/desktop/icon-youtube.svg" alt=""
+								/></a>
+								<a href="#"
+									><img src="/assets/shared/desktop/icon-twitter.svg" alt=""
+								/></a>
+								<a href="#"
+									><img src="/assets/shared/desktop/icon-pinterest.svg" alt=""
+								/></a>
+								<a href="#"
+									><img src="/assets/shared/desktop/icon-instagram.svg" alt=""
+								/></a>
+							</div>
+						</div>
+					</div>
+				</footer>
+
+				<script src="js/script.js "></script>
+			</body>
+		</html>
+
+		Locations Contact Web design Express A multi-carrier shipping website for
+		ecommerce businesses Transfer Site for low-cost money transfers and sending
+		money within seconds Photon A state-of-the-art music player with
+		high-resolution audio and DSP effects Builder Connects users with local
+		contractors based on their location Blogr Blogr is a platform for creating
+		an online blog or publication Camp Get expert training in coding, data,
+		design, and digital marketing App Design View Projects Graphic Design View
+		Projects Let’s talk about your project Ready to take it to the next level?
+		Contact us today and find out how our expertise can help your business grow.
+		Get in touch Our company Locations Contact Designo Central Office 3886
+		Wellington Street Toronto, Ontario M9C 3J5 Contact Us (Central Office) P :
+		+1 253-863-8967 M : contact@designo.co
+	</body>
 </html>
