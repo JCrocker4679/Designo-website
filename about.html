@@ -1,66 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Designo Agency Website Challenge</title>
-</head>
-<body>
-  Our Company
-  Locations
-  Contact
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/css/styles.css" />
 
-  About us
-  Founded in 2010, we are a creative agency that produces lasting results for our clients. 
-  We’ve partnered with many startups, corporations, and nonprofits alike to craft designs 
-  that make real impact. We’re always looking forward to creating brands, products, and 
-  digital experiences that connect with our clients' audiences.
+		<title>Welcome to Designo</title>
+	</head>
+	<body>
+		<!-- NAVIGATION -->
+		<nav class="navbar">
+			<div class="navbar-flex container">
+				<a href="/"
+					><img
+						src="/assets/shared/desktop/logo-dark.png"
+						class="logo"
+						alt="Designo Logo"
+				/></a>
+				<div class="main-menu-items">
+					<ul class="menu-items-list">
+						<li><a href="/about.html">Our Company</a></li>
+						<li><a href="/locations.html">Locations</a></li>
+						<li><a href="/contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<!-- MOBILE MENU -->
+				<div class="mobile-menu">
+					<!-- HAMBURGER BUTTON -->
+					<div class="mobile-menu-toggle">
+						<img
+							src="/assets/shared/mobile/icon-hamburger.svg"
+							alt="menu button"
+							class="hamburger"
+						/>
+						<img
+							src="/assets/shared/mobile/icon-close.svg"
+							alt="close button"
+							class="close hide"
+						/>
+					</div>
+					<!-- OVERLAY BEHIND MOBILE MENU -->
+					<div class="mobile-menu-modal"></div>
+					<!-- MOBILE MENU ITEMS LIST -->
+					<div class="mobile-menu-items">
+						<ul class="mobile-menu-list">
+							<li><a href="/about.html">Our Company</a></li>
+							<li><a href="/locations.html">Locations</a></li>
+							<li><a href="/contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
 
-  World-class talent
-  We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
-  crafted from concept to launch, ensuring success in its given market. We are constantly updating 
-  our skills in a myriad of platforms.
+		<!-- HEADER SECTION -->
+		<section class="header about-header">
+			<div class="container">
+				<div class="bg-leaf">
+					<img src="/assets/shared/desktop/bg-pattern-leaf.svg" alt="" />
+				</div>
+				<div class="card">
+					<div class="background">
+						<div class="content">
+							<h2>About Us</h2>
+							<p>
+								Founded in 2010, we are a creative agency that produces lasting
+								results for our clients. We’ve partnered with many startups,
+								corporations, and nonprofits alike to craft designs that make
+								real impact. We’re always looking forward to creating brands,
+								products, and digital experiences that connect with our clients'
+								audiences.
+							</p>
+						</div>
+						<div class="image">
+							<picture>
+								<source
+									media="(max-width: 440px)"
+									srcset="/assets/about/mobile/image-about-hero.jpg"
+								/>
+								<source
+									media="(max-width: 768px)"
+									srcset="/assets/about/tablet/image-about-hero.jpg"
+								/>
+								<img src="/assets/about/desktop/image-about-hero.jpg" alt="" />
+							</picture>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  Our team is multi-disciplinary and we are not merely interested in form — content and meaning 
-  are just as important. We give great importance to craftsmanship, service, and prompt delivery. 
-  Clients have always been impressed with our high-quality outcomes that encapsulates their 
-  brand’s story and mission.
+		<!-- ATTRIBUTES SECTION -->
 
-  The real deal
-  As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
-  Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
-  opportunity. We make design and technology more accessible and give you tools to measure success.
+		<section class="attributes">
+			<div class="container">
+				<div class="bg-leaf">
+					<img src="/assets/shared/desktop/bg-pattern-leaf.svg" alt="" />
+				</div>
+				<div class="flex-container">
+					<div class="item-container">
+						<div class="img-container box1">
+							<img
+								src="/assets/home/desktop/illustration-passionate.svg"
+								alt=""
+							/>
+						</div>
+						<div class="content">
+							<h3>Passionate</h3>
 
-  We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
-  we inspire audiences to take action and drive real results.
+							<p>
+								Each project starts with an in-depth brand research to ensure we
+								only create products that serve a purpose. We merge art, design,
+								and technology into exciting new solutions.
+							</p>
+						</div>
+					</div>
 
-  Canada
-  See location
+					<div class="item-container">
+						<div class="img-container box2">
+							<img
+								src="/assets/home/desktop/illustration-resourceful.svg"
+								alt=""
+							/>
+						</div>
+						<div class="content">
+							<h3>Resourceful</h3>
+							<p>
+								Everything that we do has a strategic purpose. We use an agile
+								approach in all of our projects and value customer
+								collaboration. It guarantees superior results that fulfill our
+								clients’ needs.
+							</p>
+						</div>
+					</div>
 
-  Australia
-  See location
+					<div class="item-container">
+						<div class="img-container box3">
+							<img
+								src="/assets/home/desktop/illustration-friendly.svg"
+								alt=""
+							/>
+						</div>
+						<div class="content">
+							<h3>Friendly</h3>
+							<p>
+								We are a group of enthusiastic folks who know how to put people
+								first. Our success depends on our customers, and we strive to
+								give them the best experience a company can provide.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  United Kingdom
-  See location
+		<!-- CTA -->
 
-  Let’s talk about your project
-  Ready to take it to the next level? Contact us today and find out how our expertise can 
-  help your business grow.
-  Get in touch
+		<section class="cta">
+			<div class="container">
+				<div class="background">
+					<div class="content">
+						<div class="text">
+							<h2>Let’s talk about your project</h2>
+							<p>
+								Ready to take it to the next level? Contact us today and find
+								out how our expertise can help your business grow.
+							</p>
+						</div>
 
-  Our company
-  Locations
-  Contact
+						<a href="#"><div class="btn-light">Get in Touch</div></a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
+		<!-- Footer -->
 
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
-</body>
+		<footer class="footer">
+			<div class="container">
+				<nav class="footer-nav">
+					<img
+						class="logo"
+						src="/assets/shared/desktop/logo-light.png"
+						alt="logo"
+					/>
+					<div class="divider-1"></div>
+					<ul class="footer-nav-menu">
+						<a href="/about"><li class="footer-nav-item">Our Company</li></a>
+						<a href="/locations"><li class="footer-nav-item">Locations</li></a>
+						<a href="/contact"><li class="footer-nav-item">Contact</li></a>
+					</ul>
+				</nav>
+				<div class="divider-2"></div>
+				<div class="footer-info-container">
+					<div class="address">
+						<p>
+							<strong>Designo Central Office </strong> <br />3886 Wellington
+							Street<br />
+							Toronto, Ontario M9C 3J5
+						</p>
+					</div>
+					<div class="contact-numbers">
+						<p>
+							Contact Us (Central Office)<br />
+							<span>P : +1 253-863-8967 <br />M : contact@designo.co </span>
+						</p>
+					</div>
+					<div class="socials">
+						<a href="#"
+							><img src="/assets/shared/desktop/icon-facebook.svg" alt=""
+						/></a>
+						<a href="#"
+							><img src="/assets/shared/desktop/icon-youtube.svg" alt=""
+						/></a>
+						<a href="#"
+							><img src="/assets/shared/desktop/icon-twitter.svg" alt=""
+						/></a>
+						<a href="#"
+							><img src="/assets/shared/desktop/icon-pinterest.svg" alt=""
+						/></a>
+						<a href="#"
+							><img src="/assets/shared/desktop/icon-instagram.svg" alt=""
+						/></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/script.js "></script>
+	</body>
 </html>
+
+Our Company Locations Contact About us World-class talent We are a crew of
+strategists, problem-solvers, and technologists. Every design is thoughtfully
+crafted from concept to launch, ensuring success in its given market. We are
+constantly updating our skills in a myriad of platforms. Our team is
+multi-disciplinary and we are not merely interested in form — content and
+meaning are just as important. We give great importance to craftsmanship,
+service, and prompt delivery. Clients have always been impressed with our
+high-quality outcomes that encapsulates their brand’s story and mission. The
+real deal As strategic partners in our clients’ businesses, we are ready to take
+on any challenge as our own. Solving real problems require empathy and
+collaboration, and we strive to bring a fresh perspective to every opportunity.
+We make design and technology more accessible and give you tools to measure
+success. We are visual storytellers in appealing and captivating ways. By
+combining business and marketing strategies, we inspire audiences to take action
+and drive real results. Canada See location Australia See location United
+Kingdom See location Let’s talk about your project Ready to take it to the next
+level? Contact us today and find out how our expertise can help your business
+grow. Get in touch Our company Locations Contact Designo Central Office 3886
+Wellington Street Toronto, Ontario M9C 3J5 Contact Us (Central Office) P : +1
+253-863-8967 M : contact@designo.co

@@ -629,10 +629,24 @@ PAGES HEADER
 	left: -8rem;
 }
 
-.header .header-background {
+.header .header-background-web {
 	background-image: url(../assets/web-design/desktop/bg-pattern-intro-web.svg);
 	background-repeat: no-repeat;
 	background-position: right;
+	background-color: var(--primary-color);
+	border-radius: 15px;
+}
+.header .header-background-app {
+	background-image: url(../assets/app-design/desktop/bg-pattern-intro-app.svg);
+	background-repeat: no-repeat;
+	background-position: left;
+	background-color: var(--primary-color);
+	border-radius: 15px;
+}
+.header .header-background-graphic {
+	background-image: url(../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg);
+	background-repeat: no-repeat;
+	background-position: left;
 	background-color: var(--primary-color);
 	border-radius: 15px;
 }
@@ -682,17 +696,17 @@ PROJECTS
 	margin-top: 8rem;
 }
 
-.card .image {
+.projects .card .image {
 	overflow: hidden;
 	border-radius: 15px 15px 0 0;
 }
 
-.card .image img {
+.projects .card .image img {
 	object-fit: cover;
 	transition: all 0.2s ease;
 }
 
-.card .content {
+.projects .card .content {
 	background-color: var(--primary-lightest);
 	padding: 2rem;
 	text-align: center;
@@ -702,25 +716,62 @@ PROJECTS
 	border-radius: 0px 0px 15px 15px;
 }
 
-.card .content h3 {
+.projects .card .content h3 {
 	color: var(--primary-color);
 }
 
-.card:hover {
+.projects .card:hover {
 	cursor: pointer;
 }
 
-.card:hover .image img {
+.projects .card:hover .image img {
 	transform: scale(1.05);
 	filter: brightness(95%);
 }
 
-.card:hover .content,
-.card:hover .content h3 {
+.projects .card:hover .content,
+.projects .card:hover .content h3 {
 	color: var(--white);
 	background-color: var(--primary-color);
 	transition: background-color 0.2s ease;
 	transition: color 0.1s ease;
+}
+
+/*----------------
+
+ABOUT HEADER
+
+------------------ */
+
+.about-header .card .background {
+	display: flex;
+	background-image: url(/assets/about/desktop/bg-pattern-hero-about-desktop.svg);
+	background-repeat: no-repeat;
+	background-color: var(--primary-color);
+	background-size: contain;
+	background-position: 200px 0px;
+	color: var(--white);
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.about-header .card .content {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+	gap: 2rem;
+	padding: 0 6rem;
+}
+
+.about-header .card .image {
+	width: 75%;
+}
+
+.about-header .card img {
+	object-fit: cover;
+	width: 100%;
 }
 
 /*----------------
@@ -940,6 +991,22 @@ MEDIA QUERIES
 		border-radius: 15px 0px 0px 15px;
 	}
 
+	.about-header .card .background {
+		flex-direction: column-reverse;
+		background-position: -100px -100px;
+	}
+
+	.about-header .card .content {
+		align-items: center;
+		text-align: center;
+		padding: 3rem 1rem;
+		text-wrap: balance;
+	}
+
+	.about-header .card .image {
+		width: 100%;
+	}
+
 	@media (max-width: 440px) {
 		h1 {
 			font-size: 32px;
@@ -1060,6 +1127,15 @@ MEDIA QUERIES
 
 		.projects .card .content {
 			border-radius: 0px 0px 15px 15px;
+		}
+
+		.about-header .card .background {
+			background-image: url(/assets/about/mobile/bg-pattern-hero-about-mobile.svg);
+			background-size: cover;
+			background-position: -300px 250px;
+			color: var(--white);
+			border-radius: 0px;
+			overflow: hidden;
 		}
 	}
 }
