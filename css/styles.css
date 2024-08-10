@@ -154,6 +154,74 @@ UTILITIES
 	transition: all 0.1s ease;
 }
 
+.btn-dark {
+	background-color: var(--primary-color);
+	padding: 1rem 1.5rem;
+	text-transform: uppercase;
+	max-width: fit-content;
+	font-weight: 500;
+	letter-spacing: 1px;
+	border-radius: 8px;
+	font-size: 15px;
+	color: var(--white);
+	cursor: pointer;
+	height: fit-content;
+}
+
+.btn-dark:hover {
+	background-color: var(--primary-light);
+	transition: all 0.1s ease;
+}
+
+/* CARDS */
+
+.lg-card {
+	position: relative;
+	display: flex;
+	border-radius: 15px;
+	overflow: hidden;
+	background-color: var(--primary-lightest);
+}
+
+.lg-card img {
+	width: 100%;
+}
+
+.lg-card .content {
+	width: 70%;
+	padding: 0 6rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1.5rem;
+}
+
+.lg-card .content h2 {
+	color: var(--primary-color);
+}
+
+.lg-card .content p {
+	max-width: 46ch;
+}
+
+.lg-card picture {
+	z-index: 3;
+}
+
+.lg-card .bg-image {
+	position: absolute;
+	bottom: -50px;
+	left: 250px;
+	opacity: 0.15;
+	z-index: 2;
+}
+
+.lg-card .bg-image {
+	left: -20px;
+	bottom: -30px;
+	transform: scale(0.8);
+}
+
 /*---------------
 
 NAVIGATION
@@ -776,6 +844,42 @@ ABOUT HEADER
 
 /*----------------
 
+ABOUT CARDS
+
+------------------ */
+
+.talent {
+	margin-top: 12rem;
+}
+
+.real-deal {
+	margin-top: 12rem;
+}
+
+.real-deal .lg-card {
+	flex-direction: row-reverse;
+}
+
+.locations .item-container .content {
+	gap: 2rem;
+}
+
+.locations .item-container .content .btn-dark {
+	margin: 0 auto;
+}
+
+.locations .bg-leaf {
+	position: absolute;
+	height: 594px;
+	width: 1006px;
+	z-index: -10;
+	bottom: -28rem;
+	right: -30rem;
+	transform: rotate(180deg);
+}
+
+/*----------------
+
 MEDIA QUERIES
 
 ------------------ */
@@ -846,6 +950,70 @@ MEDIA QUERIES
 		grid-column: 2 / 4;
 		text-align: left;
 		grid-row: 1;
+	}
+
+	.about-header .card .background {
+		flex-direction: column-reverse;
+		background-position: -100px -100px;
+	}
+
+	.about-header .card .content {
+		align-items: center;
+		text-align: center;
+		padding: 3rem 1rem;
+		text-wrap: balance;
+	}
+
+	.about-header .card .image {
+		width: 100%;
+	}
+
+	.talent {
+		margin-top: 6rem;
+	}
+
+	.real-deal {
+		margin-top: 6rem;
+	}
+
+	.lg-card {
+		flex-direction: column;
+	}
+
+	.lg-card .content {
+		width: 100%;
+		padding: 4rem 1rem;
+		text-align: center;
+		align-items: center;
+	}
+
+	.lg-card .content p {
+		max-width: 60ch;
+	}
+
+	.real-deal .lg-card {
+		flex-direction: column;
+	}
+
+	.lg-card .bg-image {
+		left: unset;
+		right: -0px;
+		top: 250px;
+		transform: scale(1);
+	}
+
+	.locations .flex-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.locations .item-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.locations .item-container .content {
+		text-align: center;
 	}
 }
 @media (max-width: 768px) {
@@ -991,22 +1159,6 @@ MEDIA QUERIES
 		border-radius: 15px 0px 0px 15px;
 	}
 
-	.about-header .card .background {
-		flex-direction: column-reverse;
-		background-position: -100px -100px;
-	}
-
-	.about-header .card .content {
-		align-items: center;
-		text-align: center;
-		padding: 3rem 1rem;
-		text-wrap: balance;
-	}
-
-	.about-header .card .image {
-		width: 100%;
-	}
-
 	@media (max-width: 440px) {
 		h1 {
 			font-size: 32px;
@@ -1136,6 +1288,13 @@ MEDIA QUERIES
 			color: var(--white);
 			border-radius: 0px;
 			overflow: hidden;
+		}
+
+		.lg-card .bg-image {
+			left: unset;
+			right: -200px;
+			top: 250px;
+			transform: scale(1.6);
 		}
 	}
 }
